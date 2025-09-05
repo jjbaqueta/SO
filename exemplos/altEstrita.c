@@ -4,12 +4,17 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #define NUM_THREADS 100         // Número de threads
-#define NUM_ITERACOES 100000    // Número de iterações
+#define NUM_ITERACOES 100       // Número de iterações
 
 int soma = 0;
 int turno = 0;
+
+// Variáveis para contagem de tempo
+clock_t inicio, fim;
+double tempo;
 
 // Diretiva de entrada
 void enter(long id){
@@ -41,6 +46,9 @@ int main() {
     pthread_attr_init(&attr);
     pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
 
+    // Contagem do tempo é iniciada
+    inicio = clock();
+
     // Criando as threads
     for (long i = 0; i < NUM_THREADS; i++) {
         if (pthread_create(&threads[i], &attr, threadComportamento, (void*) i) != 0) {
@@ -57,8 +65,13 @@ int main() {
         }
     }
 
+    // Contagem do tempo é finalizada
+    fim = clock();
+
     // Exibe o resultado esperado
     printf("Soma esperada: %d - Soma obtida: %d\n", NUM_THREADS * NUM_ITERACOES, soma);
+    tempo = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
+    printf("Tempo de execução: %.2f segundos\n", tempo);
 
     pthread_attr_destroy(&attr);
     pthread_exit(NULL);
