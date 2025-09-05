@@ -8,7 +8,7 @@
 #define NUM_THREADS 100         // Número de threads
 #define NUM_ITERACOES 100000    // Número de iterações
 
-int soma;
+int soma = 0;
 
 void* threadComportamento(void* id) {
     for (int i = 0; i < NUM_ITERACOES; i++) {
