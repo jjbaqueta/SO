@@ -6,7 +6,7 @@
 #include <stdlib.h>
 
 #define NUM_THREADS 100         // Número de threads
-#define NUM_ITERACOES 100000    // Número de iterações
+#define NUM_ITERACOES 1000      // Número de iterações
 
 int soma = 0;
 
