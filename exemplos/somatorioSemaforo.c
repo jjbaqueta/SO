@@ -82,6 +82,7 @@ int main() {
     tempoCPU = ((double)(fimCPU - inicioCPU)) / CLOCKS_PER_SEC;
     printf("Tempo de CPU: %.2f segundos\n", tempoCPU);
 
+    sem_destroy(&semaforo);
     pthread_attr_destroy(&attr);
     pthread_exit(NULL);
 }
