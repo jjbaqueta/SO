@@ -101,6 +101,23 @@ int main() {
     pthread_t produtores[NUMERO_PRODUTORES];
     pthread_t consumidores[NUMERO_CONSUMIDORES];
 
+    // Rotina para criar arquivos de teste.
+    printf("MAIN: Criando arquivos de dados para os produtores...\n");
+    
+    for(int i = 1; i <= NUMERO_PRODUTORES; i++) {
+        char nomeArquivo[50];
+        sprintf(nomeArquivo, "arquivo%d.txt", i);
+        FILE* arquivo = fopen(nomeArquivo, "w");
+        
+        fprintf(arquivo, "item-P%d-A\n", i);
+        fprintf(arquivo, "item-P%d-B\n", i);
+        fprintf(arquivo, "item-P%d-C\n", i);
+        fprintf(arquivo, "item-P%d-D\n", i);
+        fprintf(arquivo, "item-P%d-E\n", i);
+        fclose(arquivo);
+    }
+    printf("MAIN: Arquivos criados.\n\n");
+    
     // Inicializa os semáforos e mutexes
     sem_init(&semaforoVagas, 0, TAMANHO_BUFFER);
     sem_init(&semaforoItens, 0, 0);
