@@ -109,11 +109,11 @@ int main() {
         sprintf(nomeArquivo, "arquivo%d.txt", i);
         FILE* arquivo = fopen(nomeArquivo, "w");
         
-        fprintf(arquivo, "item-P%d-A\n", i);
-        fprintf(arquivo, "item-P%d-B\n", i);
-        fprintf(arquivo, "item-P%d-C\n", i);
-        fprintf(arquivo, "item-P%d-D\n", i);
-        fprintf(arquivo, "item-P%d-E\n", i);
+        fprintf(arquivo, "itemA-%d\n", i);
+        fprintf(arquivo, "itemB-%d\n", i);
+        fprintf(arquivo, "itemC-%d\n", i);
+        fprintf(arquivo, "itemD-%d\n", i);
+        fprintf(arquivo, "itemE-%d\n", i);
         fclose(arquivo);
     }
     printf("MAIN: Arquivos criados.\n\n");
