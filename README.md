@@ -1,7 +1,7 @@
 # Estrutura, Pesquisa e Ordenação de Dados (EPOD)
 
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 ![UTFPR](https://img.shields.io/badge/UTFPR-Toledo-blue?style=for-the-badge)
 
 Este repositório centraliza os materiais práticos, implementações e exercícios da disciplina de **Sistemas Operacionais (SO)**, do curso de Engenharia Eletrônica da UTFPR, campus Toledo.
