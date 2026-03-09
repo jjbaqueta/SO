@@ -1,16 +1,33 @@
-# Sistemas Operacionais (SO)
+# Estrutura, Pesquisa e Ordenação de Dados (EPOD)
 
-<div>
-  <div id="intro">
-    <p> Este repositório tem como objetivo apresentar códigos desenvolvidos durante a disciplina de Sistemas Operacionais do curso de Engenharia Eletrônica da UTFPR-TD.</p> 
-  
-  <div id="bibliografia">
-    <h2>Bibliografia</h2>
-      <p>Alguns livros sobre algoritmos:</p>
-      <ul>
-        <li><p>TANENBAUM, Andrew S.; BOS, Herbert. Sistemas operacionais modernos. 4. ed. São Paulo, SP: Pearson Education do Brasil, 2016.</p></li>
-        <li><p>SILBERSCHATZ, Abraham; GALVIN, Peter Baer; GAGNE, Greg. Fundamentos de sistemas operacionais. 9. Rio de Janeiro: LTC, 2015. 1 recurso online. ISBN 978-85-216-3001-2.</p></li>
-        <li><p>MAZIERO, Carlos A. Sistemas operacionais: conceitos e mecanismos. Livro aberto, 2014.</li>
-      </ul>
-  </div>  
-</div>
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![UTFPR](https://img.shields.io/badge/UTFPR-Toledo-blue?style=for-the-badge)
+
+Este repositório centraliza os materiais práticos, implementações e exercícios da disciplina de **Sistemas Operacionais (SO)**, do curso de Engenharia Eletrônica da UTFPR, campus Toledo.
+
+---
+
+## Sobre o Repositório
+
+O objetivo deste espaço é servir como um guia prático para os conceitos abordados em aula. 
+
+Aqui você encontrará:
+
+* **Implementações de aula:** Códigos baseados nos slides teóricos.
+* **Laboratórios:** Projetos e atividades desenvolvidas durante as aulas práticas (APs).
+* **Exercícios:** Problemas de lógica e implementação para fixação de conteúdo.
+
+## Bibliografia Recomendada
+* **Andrew S. Tanenbaum e Albert S. Woodhull**. *Sistemas operacionais*, (3ª edição). Bookman, 2008.
+* **Abraham Silberschatz; Peter Baer Galvin e Greg Gagne**. *Fundamentos de Sistemas Operacionais*, (9ª edição). LTC, 2015.
+* **Carlos Maziero**. *Sistemas Operacionais: Conceitos e Mecanismos*. (Livro Aberto), 2025.
+
+## Links Oficiais
+* [Portal da Disciplina (Moodle)](https://moodle.utfpr.edu.br/course/view.php?id=32495)
+* [Acesso à Minha Biblioteca (UTFPR)](https://webapp.utfpr.edu.br/bibservices/minhaBiblioteca)
+
+---
+**Professor:** Jeferson José Baqueta  
+**Instituição:** UTFPR - Campus Toledo  
+*Última atualização: Março de 2026*
